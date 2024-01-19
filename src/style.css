@@ -6,7 +6,7 @@ html, body {
  	margin: 0;
 	height: 100%;
   	font-family: 'Poppins', sans-serif;
-	background-image: url('static/pitch-background.png');
+	background-image: url('/static/pitch-background.png');
 	background-size: cover;
 	background-repeat: no-repeat; /* This prevents the image from repeating */
 	background-position: center center;
