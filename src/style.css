@@ -1,0 +1,144 @@
+* {
+  	box-sizing: border-box;
+}
+
+html, body {
+ 	margin: 0;
+	height: 100%;
+  	font-family: 'Poppins', sans-serif;
+	background-image: url('static/pitch-background.png');
+	background-size: cover;
+	background-repeat: no-repeat; /* This prevents the image from repeating */
+	background-position: center center;
+	background-color: rgb(124, 165, 215);
+	background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+	justify-content: flex-start;
+    background-color: #DC0714;
+	background: linear-gradient(to right,#070c60, rgb(176, 11, 11));
+	
+    height: 90px;
+    padding: 30px 30px;
+	font-family: 'Poppins', sans-serif;
+	/* letter-spacing: -1.5px; */
+	
+}
+
+nav.team-Chelsea {
+    background: linear-gradient(to right,#070c60, rgba(70, 87, 248, 0.646));
+}
+
+nav.team-Arsenal {
+    background: linear-gradient(to right,#070c60, rgba(237, 66, 66, 0.828));
+}
+
+.nav--logo {
+	max-width: 130px;
+	padding: 0px;
+	
+	
+}
+
+.nav--team--logo {
+	max-width: 60px;
+	padding: 0px;
+	
+	
+}
+
+.nav--title {
+	font-size: 35px;
+	color: white;
+	margin-right: auto;
+}
+
+
+.nav--team {
+	font-size: 25px;
+	color: white;
+	font-family: 'Albertus';
+	margin-right: 5px;
+	
+}
+
+
+
+.visualizer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Inter', sans-serif;
+}
+
+.visualizer--title {
+	font-size: 35x;
+	font-weight: bolder;
+	text-shadow: 1px 1px 2px red;
+}
+
+.visualizer--chart {
+	max-width: 50%;
+	background-color: aquamarine;
+	box-shadow: 0px 0px 8px#070c60;
+
+}
+
+.team-selector {
+    display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-top: 5px;
+	
+}
+
+.team-button {
+    /* Styles for each team button */
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #070b60b6;
+    cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	border-radius: 15px;
+	color:white;
+}
+
+.team-button.active {
+    /* Styles for the active team button */
+    border-color: #007bff;
+    background-color: #1c71cba4;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+	
+    .nav--logo {
+		max-width: 120px;
+		margin-left: -25px;
+	}
+	.nav--team--logo {
+        max-width: 60px;
+		margin-right: 0px;
+    }
+
+    .nav--title {
+        font-size: 25px;
+		margin-left: -18px;
+    }
+
+    .nav--team {
+        font-size: 0px;
+    }
+
+	.visualizer--chart {
+		max-width: 95%;
+	}
+	
+
+}
