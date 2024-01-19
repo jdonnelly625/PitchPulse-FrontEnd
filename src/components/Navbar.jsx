@@ -12,7 +12,7 @@ const teamLogos = {
 
 
 const Navbar = ({ team }) => {
-    const logo = teamLogos[team] || '/static/liverpool-logo-crop.png'; 
+    const logo = teamLogos[team] || '/static/default-logo.png'; 
 
     return (
         <nav className={`team-${team}`}>
